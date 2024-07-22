@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Super Over League</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container {
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+            background-color: black;
+            height: 40vh;
+            
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-6 {
+            flex: 1;
+            max-width: 50%;
+        }
+        .col-6 img {
+            max-width: 150px;
+            height: auto;
+        }
+        .Heading {
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const element = (
+            <div className="container">
+                <h1 className="Heading">Super Over League</h1>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-6">
+                            <img src="https://assets.ccbp.in/frontend/react-js/rcb-img.png" alt="RCB" />
+                        </div>
+                        <div className="col-6">
+                            <img src="https://assets.ccbp.in/frontend/react-js/csk-img.png" alt="CSK" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+        ReactDOM.render(element, document.getElementById("root"));
+    </script>
+</body>
+</html>

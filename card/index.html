@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Congrats Card</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container {
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+            background-color: black;
+            height: 80vh;
+            background-image: url("https://assets.ccbp.in/frontend/react-js/congrats-card-bg.png");
+            
+        }
+        .containers{
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #caffce;
+            margin: 30px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Heading {
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const element =(
+            <div className="container">
+                <h1 className="Heading">Congratulations</h1>
+                <div className="containers">
+                    <img src="https://assets.ccbp.in/frontend/react-js/congrats-card-profile-img.png" alt=""/>
+                    <h3>Kiran V</h3>
+                    <p>Vishnu institute of Computer Education and Technology,<br/>Bhimavaram</p>
+                    <img src="https://assets.ccbp.in/frontend/react-js/congrats-card-watch-img.png" alt=""/>
+                </div>
+            </div>
+        )
+        ReactDOM.render(element, document.getElementById("root"));
+    </script>
+</body>
+</html>
